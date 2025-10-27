@@ -1,12 +1,34 @@
-# React + Vite
+# 🎓 EduCraft — Learn. Grow. Succeed.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EduCraft is a modern educational platform built using **React** and **Tailwind CSS**, designed to help learners explore, enroll, and grow through interactive courses.  
+It features a clean UI, responsive design, and a structured learning experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🏠 **Home Page** – Beautiful hero section, featured courses, and platform highlights  
+- 📚 **Courses Page** – Browse all available courses with category-based filtering  
+- ✨ **Featured Courses Section** – Highlights top-rated and trending courses  
+- 👨‍🏫 **Expert Instructors** – Learn from verified and experienced mentors  
+- 📜 **Certification** – Receive a digital certificate upon completion  
+- 🔒 **Privacy & Terms Pages** – Fully compliant and professional content  
+- 📞 **Contact & About Pages** – Know more about EduCraft and reach out easily  
+- 🧭 **Responsive Navbar & Footer** – Smooth navigation on all devices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧱 Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| ⚛️ React | Frontend Framework |
+| 🎨 Tailwind CSS | Styling |
+| 🧭 React Router DOM | Routing between pages |
+| 💎 Lucide React | Icons |
+| 🧰 Vite | Development & Build tool |
+
+---
+
+## 📂 Folder Structure
+
