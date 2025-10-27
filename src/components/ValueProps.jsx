@@ -1,22 +1,22 @@
 import React from 'react'
+import {props} from '../data/data'
 
-const props = [
-  { title: 'Expert Instructors', desc: 'Top-rated educators from the industry' },
-  { title: 'Lifetime Access', desc: 'Learn at your own pace forever' },
-  { title: 'Certification', desc: 'Get certified and boost your career' }
-];
 
 const ValueProps = () => {
   return (
-    <section className="text-center bg-white py-14">
+    <section className="text-center bg-gray-200 py-14">
       <h2 className="mb-8 text-3xl font-semibold text-green-800">Why EduCraft?</h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-        {props.map((item, idx) => (
-          <div key={idx} className="p-6 border shadow-sm rounded-xl">
-            <h4 className="text-xl font-bold text-green-700">{item.title}</h4>
-            <p className="mt-2 text-gray-600">{item.desc}</p>
-          </div>
-        ))}
+        {props.map((item, i) => {
+          const Icon = item.icon;
+          return (
+            <div key={i} className="p-6 transition bg-white shadow-md rounded-2xl hover:shadow-xl">
+              <Icon className="w-10 h-10 mx-auto mb-4 text-blue-600" />
+              <h3 className="mb-2 text-lg font-semibold text-gray-800">{item.title}</h3>
+              <p className="text-sm text-gray-600">{item.desc}</p>
+            </div>
+          );
+        })}
       </div>
     </section>
   )

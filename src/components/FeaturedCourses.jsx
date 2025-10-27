@@ -1,31 +1,40 @@
-import React from 'react'
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-
-const courses = [
-  { id: 1, title: 'UI/UX Design Basics', instructor: 'Jane Doe', price: '₹999' },
-  { id: 2, title: 'React for Beginners', instructor: 'John Smith', price: '₹799' },
-  { id: 3, title: 'Digital Marketing Mastery', instructor: 'Samantha', price: '₹1199' }
-];
+import React from "react";
+import { Link } from "react-router-dom";
+import {courseData} from "../data/courseData";
+import CourseCard from "./CourseCard";
 
 const FeaturedCourses = () => {
-  return (
-    <section className="py-16 text-center bg-white">
-      <h2 className="mb-8 text-3xl font-semibold text-green-800">Featured Courses</h2>
-      <Swiper spaceBetween={20} slidesPerView={1} breakpoints={{768: {slidesPerView: 2}, 1024: {slidesPerView: 3}}}>
-        {courses.map((course) => (
-          <SwiperSlide key={course.id}>
-            <div className="p-6 text-left border shadow-sm rounded-xl">
-              <h3 className="text-lg font-bold text-green-700">{course.title}</h3>
-              <p className="text-sm text-gray-600">By {course.instructor}</p>
-              <p className="mt-2 font-semibold text-green-600">{course.price}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section>
-  )
-}
+  const featuredCourses = courseData.filter((course) => course.featured);
 
-export default FeaturedCourses
+  return (
+    <section className="px-6 py-16 bg-gray-200">
+      <div className="max-w-6xl mx-auto mb-12 text-center">
+        <h2 className="mb-3 text-3xl font-bold text-gray-800">
+          🌟 Featured Courses
+        </h2>
+        <p className="max-w-2xl mx-auto text-lg text-gray-600">
+          Learn from top instructors with these specially curated courses to boost your skills.
+        </p>
+      </div>
+
+      {/* Course Grid */}
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {featuredCourses.map((course) => (
+          <CourseCard key={course.id} course={course} />
+        ))}
+      </div>
+
+      {/* View All Button */}
+      <div className="mt-12 text-center">
+        <Link
+          to="/courses"
+          className="inline-block px-8 py-3 text-lg font-medium text-white transition-transform duration-300 bg-blue-600 rounded-full shadow-md hover:bg-blue-700 hover:scale-105"
+        >
+          View All Courses →
+        </Link>
+      </div>
+    </section>
+  );
+};
+
+export default FeaturedCourses;

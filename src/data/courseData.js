@@ -1,0 +1,116 @@
+ export const courseData = [
+  {
+    id: 1,
+    title: "UI/UX Design Basics",
+    instructor: "N/A",
+    price: "₹999",
+    category: "Design",
+    image: "https://via.placeholder.com/400x250?text=UI%2FUX+Design",
+    description:
+      "Learn the fundamentals of user interface and user experience design using modern tools and principles.",
+    featured: true,
+    type: "video",
+    contentUrl: "https://www.youtube.com/embed/3JluqTojuME",
+  },
+  {
+    id: 2,
+    title: "React for Beginners",
+    instructor: "John Smith",
+    price: "₹799",
+    category: "Web Development",
+    image: "https://via.placeholder.com/400x250?text=React+Basics",
+    description:
+      "Start your journey in React and build dynamic, interactive web apps using components and hooks.",
+    featured: true,
+    type: "pdf",
+    contentUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+  },
+  {
+    id: 3,
+    title: "Digital Marketing Mastery",
+    instructor: "Samantha Ray",
+    price: "₹1199",
+    category: "Marketing",
+    image: "https://via.placeholder.com/400x250?text=Digital+Marketing",
+    description:
+      "Master SEO, social media strategies, and digital campaigns to grow any business online.",
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "Python Programming Essentials",
+    instructor: "Amit Verma",
+    price: "₹699",
+    category: "Programming",
+    image: "https://via.placeholder.com/400x250?text=Python+Essentials",
+    description:
+      "Learn Python from scratch with real-world projects and hands-on exercises.",
+    featured: true,
+  },
+  {
+    id: 5,
+    title: "Data Science with Python",
+    instructor: "Neha Sharma",
+    price: "₹1299",
+    category: "Data Science",
+    image: "https://via.placeholder.com/400x250?text=Data+Science",
+    description:
+      "Dive into data visualization, statistics, and machine learning using Python libraries.",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "AI & Machine Learning",
+    instructor: "Dr. Ravi Kumar",
+    price: "₹1499",
+    category: "Artificial Intelligence",
+    image: "https://via.placeholder.com/400x250?text=AI+and+ML",
+    description:
+      "Understand neural networks, supervised learning, and AI models with practical examples.",
+    featured: true,
+  },
+  {
+    id: 7,
+    title: "Frontend Web Development",
+    instructor: "Priya Nair",
+    price: "₹899",
+    category: "Web Development",
+    image: "https://via.placeholder.com/400x250?text=Frontend+Development",
+    description:
+      "Master HTML, CSS, and JavaScript to create stunning and responsive web interfaces.",
+    featured: false,
+  },
+  {
+    id: 8,
+    title: "Backend with Node.js",
+    instructor: "Rahul Gupta",
+    price: "₹999",
+    category: "Web Development",
+    image: "https://via.placeholder.com/400x250?text=Node.js+Backend",
+    description:
+      "Build scalable backend servers using Node.js, Express, and modern API design.",
+    featured: true,
+  },
+  {
+    id: 9,
+    title: "Graphic Design with Canva",
+    instructor: "Mia Kapoor",
+    price: "₹599",
+    category: "Design",
+    image: "https://via.placeholder.com/400x250?text=Graphic+Design",
+    description:
+      "Create professional designs, posters, and social media creatives easily using Canva.",
+    featured: false,
+  },
+  {
+    id: 10,
+    title: "Ethical Hacking Fundamentals",
+    instructor: "Arjun Singh",
+    price: "₹1399",
+    category: "Cybersecurity",
+    image: "https://via.placeholder.com/400x250?text=Ethical+Hacking",
+    description:
+      "Learn ethical hacking, penetration testing, and network defense strategies.",
+    featured: true,
+  },
+];
